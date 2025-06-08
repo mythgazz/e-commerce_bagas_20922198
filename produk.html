@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce Tugas Aplikasi IT-II</title>
+  <style>
+    html,body{
+      height:100%;
+    }
+    #container{
+      min-height:100%;
+      position:relative;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 1rem;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      gap: 1rem;
+    }
+    nav ul li {
+      display: inline;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+    main {
+      padding: 2rem;
+    }
+    .produk-container {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .produk {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 1rem;
+      width: 250px;
+    }
+    .produk img {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+    .produk h2 {
+      font-size: 1.2rem;
+    }
+    .produk p {
+      font-weight: bold;
+      color: #28a745;
+    }
+    .produk button {
+      background-color: #007bff;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+     footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      position:relative;
+      bottom:0px;
+      width: 100%;
+      height:50px;
+      line-height:50px;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>E-commerce</h1>
+    <nav>
+      <nav>
+      <ul>
+        <li><a href="beranda.html">beranda</a></li>
+        <li><a href="produk.html">produk</a></li>
+        <li><a href="keranjang.html">keranjang</a></li>
+        <li><a href="kontak.html">kontak</a></li>
+
+      </ul>
+    <ul align="right"><a href="keranjang.html"><button>Lihat keranjang</button></a></ul>
+    </nav>
+  </header>
+<h2 text align="center"><img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcm02djd3aTd0bWMzZ2o0Yzdkb2gxbnRnZDNkeHJyZzVhems2ZjF1MiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jRvl8voluyUjoU819a/giphy.gif" widht="200px" height="100px"> 🌟 produk Diskon Hari ini! 🌟 <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcm02djd3aTd0bWMzZ2o0Yzdkb2gxbnRnZDNkeHJyZzVhems2ZjF1MiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jRvl8voluyUjoU819a/giphy.gif" widht="200px" height="100px"></h2><br><br>
+      <section class="produk-container">
+      <article class="produk">
+        <img src="https://images.tokopedia.net/img/cache/500-square/VqbcmM/2023/3/16/d1950012-a146-4d8b-9c9f-e6300a11f130.jpg.webp?ect=4g" alt="produk 1">
+        <h1>TZM Project Std Non Ss Pro knalpot tzm Mio M3 / fino 125 / mio gt 125</h1>
+        <p>Rp 715.000</p>
+        <button>Beli</button><br><br><button onclick="tambahKekeranjang('produk 1', 715000)">Tambah ke keranjang</button>
+      </article>
+
+      <article class="produk">
+        <img src="https://images.tokopedia.net/img/cache/500-square/aphluv/1997/1/1/b05a015666c34bc1912951f82989cd75~.jpeg.webp?ect=4g" alt="produk 2">
+        <h1>Saringan Knalpot Motor</h1>
+        <p>Rp 14.000</p>
+        <button>Beli</button><br><br><button onclick="tambahKekeranjang('produk 2', 715000)">Tambah ke keranjang</button>
+      </article>
+
+      <article class="produk">
+        <img src="https://images.tokopedia.net/img/cache/500-square/VqbcmM/2024/10/29/21e06830-42e9-490e-b1a0-bb4c1d5f1925.jpg.webp?ect=4g" alt="produk 3">
+        <h1>Karbu Karburator pe 24 26 28 Keihin original japan - PE28</h1>
+        <p>Rp 77.500</p>
+        <button>Beli</button><br><br><button onclick="tambahKekeranjang('produk 3', 715000)">Tambah ke keranjang</button>
+      </article>
+      <article class="produk">
+        <img src="https://images.tokopedia.net/img/cache/500-square/VqbcmM/2024/7/19/d02367f4-c765-4909-9e08-90a4cb6186b0.png.webp?ect=4g" alt="produk 3">
+        <h1>Lampu Stoplamp Lazy Mio Soul Karbu Lampu Stop Lampu Rem Variasi </h1>
+        <p>Rp 574.900</p>
+        <button>Beli</button><br><br><button onclick="tambahKekeranjang('produk 4', 715000)">Tambah ke keranjang</button>
+      </article>
+    </section>
+  <footer>
+    &copy; 2025 E-commerce. Hak cipta dilindungi Bagas.
+  </footer>
+<script>
+    function tambahKekeranjang(nama, harga) {
+      const item = { nama, harga };
+
+      // Ambil data dari localStorage atau buat array baru
+      let keranjang = JSON.parse(localStorage.getItem('keranjang')) || [];
+      keranjang.push(item);
+
+      // Simpan kembali ke localStorage
+      localStorage.setItem('keranjang', JSON.stringify(keranjang));
+
+      alert(nama + ' berhasil ditambahkan ke keranjang!');
+    }
+  </script>
+</body>
+</html>
