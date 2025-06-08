@@ -5,6 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>E-commerce Tugas Aplikasi IT-II</title>
   <style>
+    html,body{
+      height:100%;
+    }
+    #container{
+      min-height:100%;
+      position:relative;
+    }
+    #content{
+      padding:10px;
+      padding-bottom:60px; /*sama atau lebih besar dari tinggi footer*/
+    }
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -50,9 +61,11 @@
       color: white;
       text-align: center;
       padding: 1rem;
-      position: relative;
-      bottom: 0;
+      position:absolute;
+      bottom:0px;
       width: 100%;
+      height:50px;
+      line-height:50px;
       margin-top: 2rem;
     }
   </style>
@@ -81,7 +94,7 @@
       🛒 Cek sekarang sebelum kehabisan</p>
       <section class="cekproduk"><a href="produk.html"><button>Cek produk</button></a></section>
     </section>
-  </main><br><br><br><br><br><br>
+  </main><br><br><br>
   <footer>
     &copy; 2025 E-commerce. Hak cipta dilindungi Bagas.
   </footer>
