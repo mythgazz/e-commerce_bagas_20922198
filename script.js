@@ -22,3 +22,16 @@
       localStorage.removeItem('keranjang');
       window.location.href = "produk.html";
     }
+
+function tambahKekeranjang(nama, harga) {
+      const item = { nama, harga };
+
+      // Ambil data dari localStorage atau buat array baru
+      let keranjang = JSON.parse(localStorage.getItem('keranjang')) || [];
+      keranjang.push(item);
+
+      // Simpan kembali ke localStorage
+      localStorage.setItem('keranjang', JSON.stringify(keranjang));
+
+      alert(nama + ' berhasil ditambahkan ke keranjang!');
+    }
