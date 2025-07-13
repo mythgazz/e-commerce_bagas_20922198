@@ -91,6 +91,11 @@ html,body{
       top: 10px;
       left: 10px;
 }
+@media screen and (max-width: 600px) {
+    .produk {
+    width: 100%;
+    }
+}
     promo-banner {
       background-color: #f8f9fa;
       border-left: 5px solid #007bff;
