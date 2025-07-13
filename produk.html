@@ -109,7 +109,11 @@
       localStorage.setItem('keranjang', JSON.stringify(keranjang));
       alert(nama + ' berhasil ditambahkan ke keranjang!');
     }
-
+    
+    function toggleProduk(element) {
+      element.classList.toggle('expand');
+    }
+    
     function filterProduk() {
       const input = document.getElementById("searchInput").value.toLowerCase();
       const produkList = document.querySelectorAll(".produk");
@@ -117,9 +121,6 @@
         const namaProduk = produk.querySelector("h3").textContent.toLowerCase();
         produk.style.display = namaProduk.includes(input) ? "block" : "none";
       });
-    }
-    function toggleProduk(element) {
-      element.classList.toggle('expand');
     }
   </script>
 </body>
