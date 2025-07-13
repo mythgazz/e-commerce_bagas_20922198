@@ -98,6 +98,19 @@ function tambahKekeranjang(nama, harga) {
 
       alert(nama + ' berhasil ditambahkan ke keranjang!');
     }
+    <script>
+  // ... (fungsi sebelumnya)
+
+  function filterProduk() {
+    const input = document.getElementById("searchInput").value.toLowerCase();
+    const produkList = document.querySelectorAll(".produk");
+
+    produkList.forEach(produk => {
+      const namaProduk = produk.querySelector("h3").textContent.toLowerCase();
+      produk.style.display = namaProduk.includes(input) ? "block" : "none";
+    });
+  }
+</script>
   </script>
 </body>
 </html>
