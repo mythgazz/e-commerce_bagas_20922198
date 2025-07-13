@@ -38,19 +38,19 @@ html,body{
     main {
       padding: 2rem;
     }
-    .produk-container {
+    produk-container {
       display: flex;
       gap: 2rem;
       flex-wrap: wrap;
     }
-    .promo-banner {
+    promo-banner {
       background-color: #f8f9fa;
       border-left: 5px solid #007bff;
       padding: 1rem;
       margin-bottom: 2rem;
       font-size: 1.1rem;
     }
-    .promo-banner h2 {
+    promo-banner h2 {
       margin-top: 0;
       color: #007bff;
     }
