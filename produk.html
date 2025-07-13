@@ -74,32 +74,25 @@
   <footer>
     &copy; 2025 E-commerce. Hak cipta dilindungi Bagas.
   </footer>
-  <script>
-    function checkout() {
-      if (keranjang.length === 0) {
-        alert("keranjang kosong!");
-        return;
-      }
-
-      alert("Checkout berhasil! Terima kasih telah berbelanja.");
-      localStorage.removeItem('keranjang');
-      window.location.href = "produk.html";
+ <script>
+  function checkout() {
+    if (keranjang.length === 0) {
+      alert("keranjang kosong!");
+      return;
     }
 
-function tambahKekeranjang(nama, harga) {
-      const item = { nama, harga };
+    alert("Checkout berhasil! Terima kasih telah berbelanja.");
+    localStorage.removeItem('keranjang');
+    window.location.href = "produk.html";
+  }
 
-      // Ambil data dari localStorage atau buat array baru
-      let keranjang = JSON.parse(localStorage.getItem('keranjang')) || [];
-      keranjang.push(item);
-
-      // Simpan kembali ke localStorage
-      localStorage.setItem('keranjang', JSON.stringify(keranjang));
-
-      alert(nama + ' berhasil ditambahkan ke keranjang!');
-    }
-    <script>
-  // ... (fungsi sebelumnya)
+  function tambahKekeranjang(nama, harga) {
+    const item = { nama, harga };
+    let keranjang = JSON.parse(localStorage.getItem('keranjang')) || [];
+    keranjang.push(item);
+    localStorage.setItem('keranjang', JSON.stringify(keranjang));
+    alert(nama + ' berhasil ditambahkan ke keranjang!');
+  }
 
   function filterProduk() {
     const input = document.getElementById("searchInput").value.toLowerCase();
@@ -110,7 +103,6 @@ function tambahKekeranjang(nama, harga) {
       produk.style.display = namaProduk.includes(input) ? "block" : "none";
     });
   }
-</script>
   </script>
 </body>
 </html>
