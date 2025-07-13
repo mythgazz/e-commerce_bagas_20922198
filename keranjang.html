@@ -1,36 +1,43 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>E-commerce Tugas Aplikasi IT-II</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Keranjang Belanja - E-commerce</title>
+  <link rel="stylesheet" href="style_final.css" />
 </head>
 <body>
-  <header>
-    <h1>E-commerce</h1>
-    <nav>
+  <div id="container">
+    <header>
+      <h1>E-commerce</h1>
       <nav>
-      <ul>
-        <li><a href="beranda.html">beranda</a></li>
-        <li><a href="produk.html">produk</a></li>
-        <li><a href="keranjang.html">keranjang</a></li>
-        <li><a href="kontak.html">kontak</a></li>
-      </ul>
-    </nav>
-  </header>
-<h1 align="center">keranjang Kamu</h1>
+        <ul>
+          <li><a href="beranda.html">beranda</a></li>
+          <li><a href="produk.html">produk</a></li>
+          <li><a href="keranjang.html">keranjang</a></li>
+          <li><a href="kontak.html">kontak</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1 align="center">Keranjang Kamu</h1>
       <section class="produk-container">
-      <ul id="daftar-keranjang"></ul>
-  <h2 id="total">Total: Rp0</h2>
-  <button onclick="checkout()">Checkout</button>
-  <br><br>
-  <a href="produk.html"><button>Kembali ke produk</button></a>
-</section>
-  </main>
-  <footer>
-    &copy; 2025 E-commerce. Hak cipta dilindungi Bagas.
-  </footer>   
+        <ul id="daftar-keranjang" style="width: 100%;"></ul>
+      </section>
+      <h2 id="total" style="text-align: center;">Total: Rp0</h2>
+      <div style="text-align: center;">
+        <button onclick="checkout()">Checkout</button><br><br>
+        <a href="produk.html"><button>Kembali ke Produk</button></a>
+      </div>
+    </main>
+
+    <footer>
+      &copy; 2025 E-commerce. Hak cipta dilindungi Bagas.
+    </footer>
+  </div>
+
   <script>
     const keranjang = JSON.parse(localStorage.getItem('keranjang')) || [];
     const list = document.getElementById('daftar-keranjang');
@@ -38,16 +45,16 @@
 
     keranjang.forEach(item => {
       const li = document.createElement('li');
-      li.textContent = `${item.nama} - Rp${item.harga}`;
+      li.textContent = `${item.nama} - Rp${item.harga.toLocaleString("id-ID")}`;
       list.appendChild(li);
       total += item.harga;
     });
 
-    document.getElementById('total').textContent = 'Total: Rp' + total;
+    document.getElementById('total').textContent = 'Total: Rp' + total.toLocaleString("id-ID");
 
     function checkout() {
       if (keranjang.length === 0) {
-        alert("keranjang kosong!");
+        alert("Keranjang kosong!");
         return;
       }
 
