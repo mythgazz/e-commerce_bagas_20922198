@@ -149,7 +149,11 @@ footer {
   .produk {
     width: 100%;
   }
-
+  
+  .btn-group {
+    flex-direction: column;
+  }
+  
   .produk-container {
     flex-direction: column;
     align-items: center;
