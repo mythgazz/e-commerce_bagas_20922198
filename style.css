@@ -81,6 +81,16 @@ html,body{
       transform: scale(1.02);
       transition: 0.3s ease;
     }
+    .badge {
+      background-color: red;
+      color: white;
+      padding: 4px 8px;
+      font-size: 0.8rem;
+      border-radius: 4px;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+}
     promo-banner {
       background-color: #f8f9fa;
       border-left: 5px solid #007bff;
