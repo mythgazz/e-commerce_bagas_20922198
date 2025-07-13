@@ -1,11 +1,11 @@
 html,body{
       height:100%;
     }
-    #container{
+    container{
       min-height:100%;
       position:relative;
     }
-    #content{
+    content{
       padding:10px;
       padding-bottom:60px; /*sama atau lebih besar dari tinggi footer*/
     }
