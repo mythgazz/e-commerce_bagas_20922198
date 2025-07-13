@@ -61,7 +61,7 @@
           <article class="produk">
           <div class="badge">Diskon 30%</div>
           <img src="https://images.tokopedia.net/img/cache/500-square/VqbcmM/2024/9/25/7ff3b046-5196-4c01-b2ce-92fd6c763ae9.jpg.webp?ect=4g" alt="produk 1">
-          <h3>Kabel Data Charger 3 in 1 Fast Charging 100W JK-07 USB Micro Type C Lightning Cable 3in1 Best Quality</h3>
+          <h3 class="judul-produk" onclick="toggleProduk(this)">Kabel Data Charger 3 in 1 Fast Charging 100W JK-07 USB Micro Type C Lightning Cable 3in1 Best Quality</h3>
           <small class="toko">Toko: Bagas Cell</small>
           <p>Rp 10.000</p>
           <div class="btn-group">
@@ -117,6 +117,9 @@
         const namaProduk = produk.querySelector("h3").textContent.toLowerCase();
         produk.style.display = namaProduk.includes(input) ? "block" : "none";
       });
+    }
+    function toggleProduk(element) {
+      element.classList.toggle('expand');
     }
   </script>
 </body>
