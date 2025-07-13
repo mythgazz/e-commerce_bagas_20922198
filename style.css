@@ -38,6 +38,11 @@ html,body{
     main {
       padding: 2rem;
     }
+    .produk-container {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
     .promo-banner {
       background-color: #f8f9fa;
       border-left: 5px solid #007bff;
