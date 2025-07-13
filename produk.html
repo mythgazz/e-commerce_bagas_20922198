@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>E-commerce Tugas Aplikasi IT-II</title>
+  <title>E-commerce Tugas Aplikasi IT-II</title> < <----- untuk judul tampilan pada tab search di browser >
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>E-commerce</h1>
-    <nav>
+    <h1>E-commerce</h1> < <----- judul pada halaman >
+    <nav> < <----- grup tombol untuk berpindah halaman >
       <ul>
-        <li><a href="beranda.html">beranda</a></li>
+        <li><a href="beranda.html">beranda</a></li> < <----- judul dan link file untuk berpindah halaman >
         <li><a href="produk.html">produk</a></li>
         <li><a href="keranjang.html">keranjang</a></li>
         <li><a href="kontak.html">kontak</a></li>
       </ul>
-      <ul align="right"><a href="keranjang.html"><button>Lihat keranjang</button></a></ul>
+      <ul align="right"><a href="keranjang.html"><button>Lihat keranjang</button></a></ul> < <----- tombol untuk berpindah halaman ke "keranjang" >
     </nav>
   </header>
 
@@ -30,7 +30,7 @@
     <input type="text" id="searchInput" placeholder="Cari produk..." onkeyup="filterProduk()" style="padding: 0.5rem; width: 60%; max-width: 400px; font-size: 1rem; border: 1px solid #ccc; border-radius: 5px;">
   </div>
 
-  <section class="produk-container">
+  <section class="produk-container"> < <----- produk >
     <article class="produk">
       <div class="badge">Diskon 30%</div>
       <img src="https://images.tokopedia.net/img/cache/500-square/VqbcmM/2023/3/16/d1950012-a146-4d8b-9c9f-e6300a11f130.jpg.webp?ect=4g" alt="produk 1">
@@ -96,7 +96,7 @@
     &copy; 2025 E-commerce. Hak cipta dilindungi Bagas.
   </footer>
 
-  <script>
+  <script> < <----- java script>
     function tambahKekeranjang(nama, harga) {
       const item = { nama, harga };
       let keranjang = JSON.parse(localStorage.getItem('keranjang')) || [];
