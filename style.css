@@ -44,6 +44,7 @@ html,body{
       flex-wrap: wrap;
     }
     .produk {
+      position: relative;
       border: 1px solid #ccc;
       border-radius: 8px;
       padding: 1rem;
@@ -87,7 +88,7 @@ html,body{
       padding: 4px 8px;
       font-size: 0.8rem;
       border-radius: 4px;
-      position: relative;
+      position: absolute;
       top: 10px;
       left: 10px;
 }
