@@ -10,95 +10,93 @@
   <header>
     <h1>E-commerce</h1>
     <nav>
-      <nav>
       <ul>
         <li><a href="beranda.html">beranda</a></li>
         <li><a href="produk.html">produk</a></li>
         <li><a href="keranjang.html">keranjang</a></li>
         <li><a href="kontak.html">kontak</a></li>
       </ul>
-    <ul align="right"><a href="keranjang.html"><button>Lihat keranjang</button></a></ul>
+      <ul align="right"><a href="keranjang.html"><button>Lihat keranjang</button></a></ul>
     </nav>
   </header>
-  <div style="text-align: center; margin-bottom: 20px;">
-  <input type="text" id="searchInput" placeholder="Cari produk..." onkeyup="filterProduk()" style="padding: 0.5rem; width: 60%; max-width: 400px; font-size: 1rem; border: 1px solid #ccc; border-radius: 5px;">
-</div>
+
   <h2 style="text-align: center;">
-    <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcm02djd3aTd0bWMzZ2o0Yzdkb2gxbnRnZDNkeHJyZzVhems2ZjF1MiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jRvl8voluyUjoU819a/giphy.gif" widht="200px" height="100px" position="relative"> 🌟 produk Diskon Hari ini! 🌟 <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcm02djd3aTd0bWMzZ2o0Yzdkb2gxbnRnZDNkeHJyZzVhems2ZjF1MiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jRvl8voluyUjoU819a/giphy.gif" widht="200px" height="100px" position="relative"></h2><br><br>
-      <section class="produk-container">
-      <article class="produk" style="position: relative;">   
-        <div class="badge">Diskon 30%</div>
-        <img src="https://images.tokopedia.net/img/cache/500-square/VqbcmM/2023/3/16/d1950012-a146-4d8b-9c9f-e6300a11f130.jpg.webp?ect=4g" alt="produk 1">
-        <h3>TZM Project Std Non Ss Pro knalpot tzm Mio M3 / fino 125 / mio gt 125</h3>
-        <p>Rp 715.000</p>
-        <div class="btn-group">
+    <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcm02djd3aTd0bWMzZ2o0Yzdkb2gxbnRnZDNkeHJyZzVhems2ZjF1MiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jRvl8voluyUjoU819a/giphy.gif" width="200px" height="100px">
+    🌟 produk Diskon Hari ini! 🌟
+    <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcm02djd3aTd0bWMzZ2o0Yzdkb2gxbnRnZDNkeHJyZzVhems2ZjF1MiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jRvl8voluyUjoU819a/giphy.gif" width="200px" height="100px">
+  </h2>
+
+  <div style="text-align: center; margin: 20px;">
+    <input type="text" id="searchInput" placeholder="Cari produk..." onkeyup="filterProduk()" style="padding: 0.5rem; width: 60%; max-width: 400px; font-size: 1rem; border: 1px solid #ccc; border-radius: 5px;">
+  </div>
+
+  <section class="produk-container">
+    <article class="produk">
+      <div class="badge">Diskon 30%</div>
+      <img src="https://images.tokopedia.net/img/cache/500-square/VqbcmM/2023/3/16/d1950012-a146-4d8b-9c9f-e6300a11f130.jpg.webp?ect=4g" alt="produk 1">
+      <h3>TZM Project Std Non Ss Pro knalpot tzm Mio M3 / fino 125 / mio gt 125</h3>
+      <p>Rp 715.000</p>
+      <div class="btn-group">
         <button>Beli</button>
         <button onclick="tambahKekeranjang('produk 1', 715000)">+ Keranjang</button>
       </div>
-      </article>
-        
-      <article class="produk">
-        <div class="badge">Diskon 30%</div>
-        <img src="https://images.tokopedia.net/img/cache/500-square/aphluv/1997/1/1/b05a015666c34bc1912951f82989cd75~.jpeg.webp?ect=4g" alt="produk 2">
-        <h3>Saringan Knalpot Motor</h3>
-        <p>Rp 14.000</p>
-        <div class="btn-group">
-        <button>Beli</button>
-        <button onclick="tambahKekeranjang('produk 2', 715000)">+ keranjang</button>
-      </article>
+    </article>
 
-      <article class="produk">
-        <div class="badge">Diskon 30%</div>
-        <img src="https://images.tokopedia.net/img/cache/500-square/VqbcmM/2024/10/29/21e06830-42e9-490e-b1a0-bb4c1d5f1925.jpg.webp?ect=4g" alt="produk 3">
-        <h3>Karbu Karburator pe 24 26 28 Keihin original japan - PE28</h3>
-        <p>Rp 77.500</p>
-        <div class="btn-group">
+    <article class="produk">
+      <div class="badge">Diskon 30%</div>
+      <img src="https://images.tokopedia.net/img/cache/500-square/aphluv/1997/1/1/b05a015666c34bc1912951f82989cd75~.jpeg.webp?ect=4g" alt="produk 2">
+      <h3>Saringan Knalpot Motor</h3>
+      <p>Rp 14.000</p>
+      <div class="btn-group">
         <button>Beli</button>
-        <button onclick="tambahKekeranjang('produk 3', 715000)">+ keranjang</button>
-      </article>
-        
-      <article class="produk">
-        <div class="badge">Diskon 30%</div>
-        <img src="https://images.tokopedia.net/img/cache/500-square/VqbcmM/2024/7/19/d02367f4-c765-4909-9e08-90a4cb6186b0.png.webp?ect=4g" alt="produk 3">
-        <h3>Lampu Stoplamp Lazy Mio Soul Karbu Lampu Stop Lampu Rem Variasi </h3>
-        <p>Rp 574.900</p>
-        <div class="btn-group">
+        <button onclick="tambahKekeranjang('produk 2', 14000)">+ Keranjang</button>
+      </div>
+    </article>
+
+    <article class="produk">
+      <div class="badge">Diskon 30%</div>
+      <img src="https://images.tokopedia.net/img/cache/500-square/VqbcmM/2024/10/29/21e06830-42e9-490e-b1a0-bb4c1d5f1925.jpg.webp?ect=4g" alt="produk 3">
+      <h3>Karbu Karburator PE 28 Keihin Original</h3>
+      <p>Rp 77.500</p>
+      <div class="btn-group">
         <button>Beli</button>
-        <button onclick="tambahKekeranjang('produk 4', 715000)">+ keranjang</button>
-      </article>
-    </section>
+        <button onclick="tambahKekeranjang('produk 3', 77500)">+ Keranjang</button>
+      </div>
+    </article>
+
+    <article class="produk">
+      <div class="badge">Diskon 30%</div>
+      <img src="https://images.tokopedia.net/img/cache/500-square/VqbcmM/2024/7/19/d02367f4-c765-4909-9e08-90a4cb6186b0.png.webp?ect=4g" alt="produk 4">
+      <h3>Lampu Stoplamp Lazy Mio Soul</h3>
+      <p>Rp 574.900</p>
+      <div class="btn-group">
+        <button>Beli</button>
+        <button onclick="tambahKekeranjang('produk 4', 574900)">+ Keranjang</button>
+      </div>
+    </article>
+  </section>
+
   <footer>
     &copy; 2025 E-commerce. Hak cipta dilindungi Bagas.
   </footer>
- <script>
-  function checkout() {
-    if (keranjang.length === 0) {
-      alert("keranjang kosong!");
-      return;
+
+  <script>
+    function tambahKekeranjang(nama, harga) {
+      const item = { nama, harga };
+      let keranjang = JSON.parse(localStorage.getItem('keranjang')) || [];
+      keranjang.push(item);
+      localStorage.setItem('keranjang', JSON.stringify(keranjang));
+      alert(nama + ' berhasil ditambahkan ke keranjang!');
     }
 
-    alert("Checkout berhasil! Terima kasih telah berbelanja.");
-    localStorage.removeItem('keranjang');
-    window.location.href = "produk.html";
-  }
-
-  function tambahKekeranjang(nama, harga) {
-    const item = { nama, harga };
-    let keranjang = JSON.parse(localStorage.getItem('keranjang')) || [];
-    keranjang.push(item);
-    localStorage.setItem('keranjang', JSON.stringify(keranjang));
-    alert(nama + ' berhasil ditambahkan ke keranjang!');
-  }
-
-  function filterProduk() {
-    const input = document.getElementById("searchInput").value.toLowerCase();
-    const produkList = document.querySelectorAll(".produk");
-
-    produkList.forEach(produk => {
-      const namaProduk = produk.querySelector("h3").textContent.toLowerCase();
-      produk.style.display = namaProduk.includes(input) ? "block" : "none";
-    });
-  }
+    function filterProduk() {
+      const input = document.getElementById("searchInput").value.toLowerCase();
+      const produkList = document.querySelectorAll(".produk");
+      produkList.forEach(produk => {
+        const namaProduk = produk.querySelector("h3").textContent.toLowerCase();
+        produk.style.display = namaProduk.includes(input) ? "block" : "none";
+      });
+    }
   </script>
 </body>
 </html>
